@@ -62,5 +62,5 @@ ENV DAPPER_RUN_ARGS="--privileged -v k3s-cache:/go/src/github.com/k3s-io/k3s/.ca
 
 WORKDIR ${DAPPER_SOURCE}
 
-ENTRYPOINT ["./entry.sh"]
+ENTRYPOINT ["./scripts/entry.sh"]
 CMD ["ci"]
